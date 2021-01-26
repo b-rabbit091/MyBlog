@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+            #content
+            {
+                background-color: chocolate;
+                border:2px solid rgb(187, 0, 9);
+                margin: 25px;
+                padding: 12px;
+            }
+            body
+            {
+                background-color: coral;
+            }
+        </style>
+
+    </head>
+
+
+
+<body>
+    <div class="container">
+        <!-- Content here -->
+      
+        <div id="content">
+        <% msg.forEach(message =>{ %>
+            <%=message.Date %>
+            <br>
+            <br>
+            <%=message.Title %>
+            <br>
+            <br>
+        
+            <%=message.Content %>    
+            <% }) %>
+       
+  
+    </div>
+   <a href="/"  class="btn btn-secondary">Click here to go to home</a>
+
+    </div>
+</body>
+</html>
